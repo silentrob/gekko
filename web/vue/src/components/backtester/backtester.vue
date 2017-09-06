@@ -29,7 +29,6 @@ export default {
   },
   methods: {
     check: function(config) {
-      // console.log('CHECK', config);
       this.config = config;
 
       if(!config.valid)
@@ -43,7 +42,7 @@ export default {
       const req = {
         gekkoConfig: this.config,
         data: {
-          candleProps: ['close', 'start'],
+          candleProps: ['close', 'start', 'open', 'high', 'low', 'volume'],
           indicatorResults: true,
           report: true,
           roundtrips: true,

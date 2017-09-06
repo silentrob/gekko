@@ -1,7 +1,7 @@
 import _ from 'lodash';
 // global moment
 
-export default function(_data, _trades, _height) {
+export default function(_data, _trades) {
 
   const trades = _trades.map(t => {
     return {
